@@ -29,14 +29,14 @@
             >;
         };
 
-        lower_layer {
+        layer_1 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Lower";
+            display-name = "1";
             bindings = <
 &none  &kp ESCAPE    &kp N7        &kp N8        &kp N4        &kp BACKSPACE    &to 1           &kp MINUS        &kp UP        &kp EQUAL          &kp BACKSPACE     &none
 &none  &kp CAPSLOCK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none            &to 2           &kp LEFT         &kp DOWN      &kp RIGHT          &kp LEFT_BRACKET  &none
@@ -45,14 +45,14 @@
             >;
         };
 
-        raise_layer {
+        layer_2 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Raise";
+            display-name = "2";
             bindings = <
 &none  &kp ESCAPE    &kp F9  &kp F10   &kp F11    &kp F12    &to 1           &mkp MB1        &mmv MOVE_UP    &mkp MB2         &msc SCRL_UP    &none
 &none  &kp DELETE    &kp F5  &kp F6    &kp F7     &kp F8     &to 2           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none
